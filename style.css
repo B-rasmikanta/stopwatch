@@ -27,16 +27,17 @@ body{
     margin: .1rem;
 }
 
-/* @media only screen and (max-width: 600px) {
-    #btn-container{
+@media only screen and (max-width: 1000px) {
+    /* #btn-container{
         font-size: 20px;
-    }
+    } */
     #body{
-        #display{
-            font-size: 1.5rem;
-        }
+        width: 90%;
     }
-} */
+    /* #display{
+        font-size: 1.5rem;
+    } */
+}
 
 @keyframes changeColor {
     0% {background-color: red;}
