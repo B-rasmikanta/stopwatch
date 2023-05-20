@@ -1,12 +1,33 @@
+/* general classes */
 *{
     color: white;
-}  
+}
+/* page heading */
+.banner{
+    height: 70px;
+    width: 20%;
+    margin: auto;
+    background-color: rgb(113, 148, 234);
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    max-width: 300px;
+}
+
+#page-head{
+    font-size: 2.5rem;
+}
+
+/* stopwatch degine css */
+
 body{
     animation: changeColor 10s infinite;
 }
+
 #display{
     font-size: 2.5rem;
 }
+
 #body{
     background-color: black;
     height: 200px;
@@ -19,6 +40,8 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    top: 1rem;
 }
 #btn-container{
     font-size: 2.5rem;
@@ -27,22 +50,27 @@ body{
     margin: .1rem;
 }
 
+/* responsive degine for the mobile screen */
+
 @media only screen and (max-width: 1000px) {
-    /* #btn-container{
-        font-size: 20px;
-    } */
     #body{
         width: 90%;
+    }
+    .banner{
+        width: 70%;
     }
     #display{
         font-size: 1.5rem;
     }
+    #page-head{
+        font-size: 1.8rem;
+    }
 }
-
+/* background color changeing animation */
 @keyframes changeColor {
-    0% {background-color: red;}
-    25%{background-color:rgb(171, 191, 255);}
-    50%{background-color:green;}
-    75%{background-color:brown;}
-    100% {background-color: red;}
+    0% {background-color: rgb(201, 175, 175);}
+    25%{background-color:rgb(164, 170, 189);}
+    50%{background-color:rgb(158, 180, 158);}
+    75%{background-color:rgb(178, 149, 149);}
+    100% {background-color: rgb(160, 134, 134);}
   }
